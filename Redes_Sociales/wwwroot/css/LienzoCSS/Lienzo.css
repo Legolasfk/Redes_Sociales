@@ -1,0 +1,83 @@
+﻿*,
+::after,
+::before {
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el tamaño total de los elementos */
+}
+
+html, body {
+    height: 100%;
+    min-height: 100vh;
+}
+body {
+    background-image: url('/resources/2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.ContenedorRedes {
+    padding: 20px; /* Añade un padding de 20px alrededor del contenido */
+    margin-top: 5%; /* Añade un margen superior del 5% */
+    height: 800px; /* Establece una altura fija de 800px */
+    background-color: rgba(0, 0, 0, 0.4); /* Establece un color de fondo blanco semi-transparente */
+    color: white; /* Establece el color del texto a blanco */
+    border-radius: 15px; /* Redondea las esquinas del contenedor */
+    box-shadow: 0 0 100px rgb(255 255 255 / 0,4); /* Añade una sombra alrededor del contenedor */
+    backdrop-filter: blur(5px); /* Aplica un desenfoque al fondo detrás del contenedor */
+    width: 60%; /* Ajusta el ancho para pantallas más grandes */
+    max-width: 500px; /* Limita el ancho máximo a 1200px */
+    margin-left: auto; /* Centra el contenedor horizontalmente */
+    margin-right: auto; /* Centra el contenedor horizontalmente */
+    text-align: center; /* Centra el contenido del contenedor */
+   
+}
+h2 {
+    margin-top: 20px;
+}
+
+#botones{
+    margin-top: 50px;
+    
+}
+
+img {
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor padre */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    max-width: 200px; /* Limita el ancho máximo a 200px */
+    margin: 10px auto; /* Añade un margen de 10px alrededor de la imagen y centra la imagen horizontalmente */
+    display: block; /* Hace que la imagen sea un bloque para centrarla */
+}
+
+
+.ContenedorRedes img,
+.ContenedorRedes .h2,
+.ContenedorRedes .botones {
+    margin-top: 70px; /* Ajusta este valor según sea necesario */
+}
+
+
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .ContenedorRedes {
+        width: 95%;
+        height: auto;
+        margin-top: 0;
+        padding: 10px;
+    }
+    img {
+        width: 100%;
+        max-width: 100px;
+        height: auto;
+    }
+    #botones .btn {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
